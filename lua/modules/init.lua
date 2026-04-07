@@ -1,1 +1,2 @@
-require('modules.linter')
+require('modules.linters')
+require('modules.greeter')

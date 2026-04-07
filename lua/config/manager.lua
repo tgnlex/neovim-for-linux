@@ -1,9 +1,30 @@
 vim.cmd [[packadd packer.nvim]]
 
+deps = {
+  plenary = "nvim-lua/plenary.nvim" , 
+  icons = "nvim-tree/nvim-web-devicons",
+  nui = "MunifTanjim/nui.nvim"
+}
+
 return require('packer').startup(function(use)
   use { 'wbthomason/packer.nvim' }
-  use { 'nvim-lua/plenary.nvim' }
-  use { 'rstacruz/vim-closer' }
+  -- DEPS --
+  use { deps.plenary }
+  use { deps.icons }
+  use { deps.nui }
+  -- TS --
+  use { 'nvim-treesitter/nvim-treesitter' }
+  -- LINT --
   use { 'w0rp/ale' }
-  use {'nvim-treesitter/nvim-treesitter' }
+  -- FILE --
+  use {
+        'nvim-neo-tree/neo-tree.nvim', 
+        dependencies = {deps.icons, deps.plenary, deps.nui}
+      }
+  -- UI --
+  use { 'akinsho/bufferline.nvim' }
+  -- UTILITIES --
+  use { 'rstacruz/vim-closer' }
+
 end)
+
