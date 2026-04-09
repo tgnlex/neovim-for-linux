@@ -1,3 +1,3 @@
-require("plugins.treesitter")
-require("plugins.bufferline")
-require("plugins.neo-tree")
+require("debian.plugins.treesitter")
+require("debian.plugins.bufferline")
+require("debian.plugins.neo-tree")

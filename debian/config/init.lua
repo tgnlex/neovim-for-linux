@@ -1,8 +1,8 @@
-require("config.manager")
-require("config.colors")
-require("config.options")
-require("config.keymaps")
-require("config.autocommands")
+require("debian.config.manager")
+require("debian.config.colors")
+require("debian.config.options")
+require("debian.config.keymaps")
+require("debian.config.autocommands")
 
 
 

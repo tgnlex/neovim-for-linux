@@ -1,2 +1,2 @@
-require('modules.linters')
-require('modules.greeter')
+require('debian.modules.linters')
+require('debian.modules.greeter')
