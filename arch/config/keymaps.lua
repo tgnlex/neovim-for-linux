@@ -9,8 +9,8 @@ vim.g.maplocalleader = " "
 --
 -- BASIC --
 map('n', 'd', '"_d', { desc = "fixing delete key" })
-map("n", "<leader>f", vim.cmd.Ex, { desc="open filesystem"})
-map("n", "<leader>ff", ":Neotree<CR>", { desc="neotree filesystem"})
+map("n", "<leader>fi", vim.cmd.Ex, { desc="open filesystem"})
+
 -- SEARCH --
 map("n", "<leader>c", ":nohlsearch<CR>", { desc = "Clear search highlights"})
 -- WINDOW SWITCH --

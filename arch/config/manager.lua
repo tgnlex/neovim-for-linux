@@ -1,10 +1,6 @@
-vim.cmd [[packadd packer.nvim]]
+require('arch.lib.packer')
 
-deps = {
-  plenary = "nvim-lua/plenary.nvim" , 
-  icons = "nvim-tree/nvim-web-devicons",
-  nui = "MunifTanjim/nui.nvim"
-}
+packer()
 
 return require('packer').startup(function(use)
   use { 'wbthomason/packer.nvim' }
@@ -16,11 +12,8 @@ return require('packer').startup(function(use)
   use { 'nvim-treesitter/nvim-treesitter' }
   -- LINT --
   use { 'w0rp/ale' }
-  -- FILE --
-  use {
-        'nvim-neo-tree/neo-tree.nvim', 
-        dependencies = {deps.icons, deps.plenary, deps.nui}
-      }
+  -- FUZZY FINDER --
+  use { 'nvim-telescope/telescope.nvim'}
   -- UI --
   use { 'akinsho/bufferline.nvim' }
   -- UTILITIES --

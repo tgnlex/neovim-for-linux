@@ -1,3 +1,3 @@
 require("arch.plugins.treesitter")
 require("arch.plugins.bufferline")
-require("arch.plugins.neo-tree")
+require("arch.plugins.telescope")
