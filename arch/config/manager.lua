@@ -8,16 +8,23 @@ return require('packer').startup(function(use)
   use { deps.plenary }
   use { deps.icons }
   use { deps.nui }
-  -- TS --
+  -- TREESITTER --
   use { 'nvim-treesitter/nvim-treesitter' }
+  -- SNIPPETS --
+  use { 'L3MON4D3/LuaSnip' }
   -- LINT --
   use { 'w0rp/ale' }
   -- FUZZY FINDER --
   use { 'nvim-telescope/telescope.nvim'}
   -- UI --
   use { 'akinsho/bufferline.nvim' }
-  -- UTILITIES --
-  use { 'rstacruz/vim-closer' }
-
+  -- MARKDOWN --
+  use { 'yousefhadder/markdown-plus.nvim' }
+  -- WEB --
+  use { 'cjodo/convert.nvim' }
+  use { 'farias-hecdin/cssvarhighlight' }
+  -- MARKS --
+  use { 'chentoast/marks.nvim' }
+  use { 'ThePrimeagen/harpoon' }
 end)
 
